@@ -319,7 +319,7 @@ function renderSettings() {
     </section>
     <section class="panel">
       <h3>About the pictures</h3>
-      <p class="muted small">Every picture is in the public domain. They are scans of classic natural history plates, storybooks and Japanese prints shared on Wikimedia Commons, including works by John Gould, Edward Lear, Pierre-Joseph Redouté, Ernst Haeckel, Beatrix Potter, Walter Crane, Kate Greenaway, Hokusai, Hiroshige and Kōno Bairei, and the USDA Pomological Watercolor Collection. Each picture's info panel links to its source.</p>
+      <p class="muted small">The cartoon animals were drawn especially for Paint Pixels. Every other picture is in the public domain. They are scans of classic natural history plates, storybooks and Japanese prints shared on Wikimedia Commons, including works by John Gould, Edward Lear, Pierre-Joseph Redouté, Ernst Haeckel, Beatrix Potter, Walter Crane, Kate Greenaway, Hokusai, Hiroshige and Kōno Bairei, and the USDA Pomological Watercolor Collection. Each picture's info panel links to its source.</p>
       <p class="muted small"><a href="https://github.com/${REPO}" id="gh">github.com/${REPO}</a></p>
     </section>
     <section class="panel">

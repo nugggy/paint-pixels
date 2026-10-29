@@ -4,7 +4,7 @@ A relaxing colour-by-numbers app for Android. Pick a picture, choose a colour an
 
 ## Features
 
-- Over 1,000 pictures in 16 categories, including Australian birds and animals, parrots, butterflies, roses, orchids, fairy tales and Hokusai prints
+- Over 1,000 pictures in 20 categories, including cute cartoon animals (ducks, turtles, monkeys and more), Australian birds and animals, parrots, butterflies, roses, orchids, fairy tales and Hokusai prints
 - Three difficulty levels (Easy, Medium, Hard), based on grid size and number of colours
 - Pinch to zoom, two-finger pan, double-tap to zoom, and drag-to-paint
 - Long-press a square to pick up its colour, plus a hint button that finds the next square
@@ -19,7 +19,9 @@ Download the latest `PaintPixels-vX.Y.Z.apk` from [Releases](https://github.com/
 
 ## Picture sources and licences
 
-Every picture is in the public domain, and each puzzle keeps a link to its original file. All of them come from [Wikimedia Commons](https://commons.wikimedia.org). Only files whose licence is recorded there as public domain or CC0 are used. The collections are:
+The cartoon animals are original drawings made for this app (`tools/cartoons.mjs`) and are released under CC0.
+
+Every other picture is in the public domain, and each puzzle keeps a link to its original file. All of them come from [Wikimedia Commons](https://commons.wikimedia.org). Only files whose licence is recorded there as public domain or CC0 are used. The collections are:
 
 - John Gould: *The Birds of Australia*, *The Mammals of Australia*, *The Birds of Asia*, *The Birds of New Guinea*
 - Edward Lear: *Illustrations of the Family of Psittacidae, or Parrots*

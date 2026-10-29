@@ -197,10 +197,10 @@ async function cutOut(buf) {
 }
 
 async function convert(item, buf, difficulty) {
-  const kind = item.source === 'commons' ? 'clip' : item.source === 'plate' ? 'plate' : 'art';
+  const kind = item.source === 'commons' || item.source === 'cartoon' ? 'clip' : item.source === 'plate' ? 'plate' : 'art';
   const conf = kind === 'clip' ? 'clip' : 'art';
   const side = SIZES[conf][difficulty];
-  if ((kind === 'plate' && !item.nocut) || kind === 'clip') {
+  if ((kind === 'plate' || kind === 'clip') && !item.nocut) {
     const cut = await cutOut(buf);
     if (cut) buf = cut;
   }
@@ -401,7 +401,7 @@ for (const cat of candidates.categories) {
     if (approved || good.length < MAX_PER_CATEGORY) good.push({ item: items[i], puzzle: r, difficulty: hashStr(items[i].key) % 3 });
   });
 
-  if (good.length < 12) {
+  if (good.length < 10) {
     console.log(`${cat.id}: only ${good.length} usable, category skipped`);
     continue;
   }

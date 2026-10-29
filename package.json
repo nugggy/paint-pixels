@@ -1,6 +1,6 @@
 {
   "name": "paint-pixels",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Colour by numbers pixel art for Android, with 1000+ public-domain pictures",
   "scripts": {
     "dev": "vite",
