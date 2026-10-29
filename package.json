@@ -1,0 +1,32 @@
+{
+  "name": "paint-pixels",
+  "version": "1.0.0",
+  "description": "Colour by numbers pixel art for Android, with 1000+ public-domain pictures",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p . && vite build",
+    "puzzles": "node tools/candidates.mjs && node tools/build-puzzles.mjs",
+    "android": "npm run build && npx cap sync android"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/browser": "^8.0.5",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/haptics": "^8.0.2",
+    "@capacitor/share": "^8.0.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4",
+    "@fontsource-variable/nunito": "^5.3.0"
+  }
+}

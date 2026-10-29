@@ -1,0 +1,15 @@
+{
+  "appId": "io.github.nugggy.paintpixels",
+  "appName": "Paint Pixels",
+  "webDir": "dist",
+  "android": {
+    "backgroundColor": "#fbf7f0"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 600,
+      "backgroundColor": "#fbf7f0",
+      "showSpinner": false
+    }
+  }
+}
