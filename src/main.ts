@@ -622,7 +622,13 @@ function openExternal(url: string) {
 
 // ---------- updates ----------
 function showUpdate(u: UpdateInfo, manual = false) {
-  const notes = esc(u.notes).replace(/\r?\n/g, '<br/>').slice(0, 1200);
+  // Release notes are markdown: show them as plain text.
+  const plain = u.notes
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[*_`]{1,2}/g, '')
+    .replace(/^#+\s*/gm, '')
+    .trim();
+  const notes = esc(plain).replace(/\r?\n/g, '<br/>').slice(0, 1200);
   modal(
     `<div class="update">
        <span class="badge">${icons.download}</span>
